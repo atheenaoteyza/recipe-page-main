@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --DarkRaspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --RoseWhite: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --LightGrey: hsl(30, 18%, 87%);
+  --WengeBrown: hsl(30, 10%, 34%);
+  --DarkCharcoal: hsl(24, 5%, 18%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Outfit, serif;
+  font-size: 16px;
+  color: var(--WengeBrown);
+}
+
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+}
+
+h1 {
+  color: var(--DarkCharcoal);
+}
+
+h2 {
+  color: var(--Nutmeg);
+}
+
+h3 {
+  color: var(--DarkRaspberry);
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+span {
+  font-weight: bold;
+}
+
+li {
+  padding: 0.5rem 12px; /* Adjust the value as needed */
+  margin-left: 0;
+}
+
+li::marker {
+  color: var(--Nutmeg); /* Change the color to your desired color */
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--RoseWhite);
+  height: 1995px;
+}
+
+.container {
+  width: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.content {
+  margin: 3rem;
+  background-color: white;
+}
+
+.pink-bg {
+  background-color: var(--RoseWhite);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list {
+  padding: 1rem;
+}
+
+ul ol {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.nutritional-facts {
+  margin: 0;
+}
+
+.no-style {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 1.275rem;
+  margin: 0;
+}
+
+.line {
+  border-bottom: 2px solid var(--LightGrey);
+}
+
+.nutmeg {
+  color: var(--Nutmeg);
+  font-weight: bold;
+}
+
+@media (max-width: 846px) {
+  .main {
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .container {
+    width: 413px;
+  }
+  .content {
+    margin-top: 0;
+  }
+  body {
+    margin-top: 0;
+  }
+}
